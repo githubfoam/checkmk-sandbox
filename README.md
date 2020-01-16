@@ -12,7 +12,6 @@ http://localhost:8080/monitor/check_mk/index.py
 ~~~~
 
 https://checkmk.com/cms_install_packages.html#Debian%20and%20Ubuntu-1
-https://checkmk.com/cms_cmk_versionen.html
 Monitoring Linux
 https://checkmk.com/cms_agent_linux.html#manual
 ~~~~
