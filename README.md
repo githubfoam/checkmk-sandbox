@@ -1,6 +1,23 @@
 #
 ~~~~
 
+  Operating System: Ubuntu 19.04
+
+vagrant@vg-checkmk-srv:~$ gdebi -n check-mk-raw-1.6.0p8_0.xenial_amd64.deb
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Reading state information... Done
+This package is uninstallable
+Dependency is not satisfiable: libevent-1.4-2
+~~~~
+~~~~
+
+vg-checkmk-srv: This package is uninstallable
+vg-checkmk-srv: Dependency is not satisfiable: libperl5.22
+~~~~
+~~~~
+  Operating System: Ubuntu 18.04
 vagrant up
 vagrant up vg-checkmk-srv vg-checkmk-client
 vagrant destroy -f
