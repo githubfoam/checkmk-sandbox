@@ -47,8 +47,13 @@ https://checkmk.com/cms_introduction_docker.html
 https://hub.docker.com/r/checkmk/check-mk-raw/
 
 https://checkmk.com/cms_install_packages.html#Debian%20and%20Ubuntu-1
+
+Monitoring Docker
+https://checkmk.com/cms_monitoring_docker.html
+
 Monitoring Linux
 https://checkmk.com/cms_agent_linux.html#manual
+
 Further free plug-ins from users, partners or third parties are available at the Checkmk Exchange.
 https://checkmk.com/check_mk-exchange.php
 ~~~~

@@ -134,7 +134,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
           client.vm.hostname = "vbox-client-02"
           client.vm.network "private_network", ip:"172.28.128.16"
       	client.vm.provider "virtualbox" do |vb|
-      	  vb.memory = "512"
+      	  vb.memory = "1024"
       	end
       	client.vm.provision "shell", inline: <<-SHELL
         hostnamectl set-hostname vg-client-02
@@ -142,7 +142,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         echo "172.28.128.15 vg-client-01.local vg-client-01" | tee -a /etc/hosts
         echo "172.28.128.16 vg-client-02.local vg-client-02" | tee -a /etc/hosts
         echo "name: nameserver, ip: 8.8.8.8 " |tee -a /etc/resolv.conf
-        apt-get update && apt-get -y install gdebi-core xinetd
+        apt-get update && apt-get -y install gdebi-core xinetd python2.7 python-pip #Install Python Pip for Python 2.7
+        pip install docker
         wget -q http://172.28.128.12/monitor/check_mk/agents/check-mk-agent_1.6.0p8-1_all.deb
       	gdebi -n check-mk-agent_1.6.0p8-1_all.deb
         echo "===================================================================================="
